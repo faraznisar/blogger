@@ -1,6 +1,5 @@
 <h1>Articles list</h1>
 
-<% @articles.each do |article| %>
     <table>
     <thead>
     <tr>
@@ -9,6 +8,7 @@
     <th>Actions</th>
     </tr>
     </thead>
+<% @articles.each do |article| %>
     <tbody>
     <tr>
         <td><%= article.title %></td>
@@ -16,5 +16,5 @@
         <td>Actions</td>
     </tr>
     </tbody>
-    </table>
 <%end%>
+    </table>
